@@ -1,0 +1,93 @@
+.catalog {
+  padding: 56px 0 40px;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 38%);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.section-kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-violet);
+}
+.section-title {
+  margin: 8px 0 8px;
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.5vw, 36px);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-weight: 800;
+}
+.section-desc {
+  color: var(--text-3);
+  font-size: 14.5px;
+  max-width: 560px;
+  line-height: 1.6;
+}
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(20,241,149,0.10);
+  border: 1px solid rgba(20,241,149,0.25);
+  color: #6EE7B7;
+  font-size: 12px;
+  font-weight: 600;
+}
+.live-dot {
+  width: 7px; height: 7px; border-radius: 999px;
+  background: #14F195;
+  box-shadow: 0 0 10px rgba(20,241,149,0.8);
+  animation: pulseGlow 1.8s infinite;
+}
+
+.catalog__controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.catalog__filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  margin-bottom: 22px;
+}
+.catalog__count {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-3);
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+/* Search in flight: previous results stay on screen, dimmed — no layout jump */
+.catalog__grid-wrap { transition: opacity 0.25s ease, filter 0.25s ease; }
+.catalog__grid-wrap--searching { opacity: 0.45; filter: saturate(0.8); pointer-events: none; }
+
+@media (max-width: 860px) {
+  .catalog__controls { flex-direction: column; align-items: stretch; }
+  .catalog__controls .searchbar { min-width: 0; }
+  .catalog__controls .sort { align-self: flex-start; }
+}
+@media (max-width: 560px) {
+  .catalog { padding-top: 40px; }
+}

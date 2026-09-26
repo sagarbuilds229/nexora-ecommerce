@@ -1,0 +1,101 @@
+/* NEXORA Design Tokens — Premium Futuristic System */
+:root {
+  /* Backgrounds - deep near-black */
+  --bg-0: #05070B;
+  --bg-1: #0A0E1A;
+  --bg-2: #101525;
+  --bg-3: #161C31;
+  --bg-card: rgba(16, 21, 37, 0.72);
+  --bg-card-hover: rgba(22, 28, 49, 0.85);
+  --bg-glass: rgba(255,255,255,0.04);
+  --bg-glass-strong: rgba(255,255,255,0.07);
+
+  /* Borders */
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.13);
+  --border-accent: rgba(139, 92, 246, 0.3);
+
+  /* Text */
+  --text-1: #F8FAFC;
+  --text-2: #A8B0C3;
+  --text-3: #6B748E;
+  --text-4: #3F475E;
+  --text-inverse: #05070B;
+
+  /* Accents - sophisticated neon (not gaming) */
+  --accent-violet: #8B5CF6;
+  --accent-cyan: #06B6D4;
+  --accent-teal: #14F195;
+  --accent-pink: #EC4899;
+  
+  --gradient-primary: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 50%, #14F195 100%);
+  --gradient-violet: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+  --gradient-cyan: linear-gradient(135deg, #06B6D4 0%, #14F195 100%);
+  --gradient-text: linear-gradient(135deg, #A78BFA 0%, #22D3EE 50%, #34D399 100%);
+  --gradient-border: linear-gradient(135deg, rgba(139,92,246,0.5), rgba(6,182,214,0.5), rgba(20,241,149,0.0));
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 24px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.5), 0 8px 20px rgba(0,0,0,0.4);
+  --shadow-glow-violet: 0 0 40px rgba(139,92,246,0.25), 0 0 80px rgba(139,92,246,0.08);
+  --shadow-glow-cyan: 0 0 40px rgba(6,182,214,0.25);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Radii */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-display: 'Syne', 'Space Grotesk', system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-pad: 24px;
+  --nav-height: 72px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+  --duration-hero: 900ms;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-pad: 20px;
+    --nav-height: 64px;
+  }
+}

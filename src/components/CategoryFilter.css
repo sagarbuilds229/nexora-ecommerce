@@ -1,0 +1,37 @@
+.cat-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.cat-pill {
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.cat-pill:hover {
+  background: rgba(255,255,255,0.10);
+  color: var(--text-1);
+  border-color: rgba(255,255,255,0.14);
+  transform: translateY(-1px);
+}
+.cat-pill:active { transform: scale(0.97); }
+.cat-pill--active {
+  background: white;
+  color: #05070B;
+  border-color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(255,255,255,0.18);
+}
+.cat-pill--active:hover {
+  background: white;
+  color: #05070B;
+}
